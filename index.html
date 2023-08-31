@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Code Editor</title>
+  <script src="https://kit.fontawesome.com/82e5fbfbd3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <section class="boxes">
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1 class="ht"><i class="fa-brands fa-html5" style="color: #e5812e;"></i> HTML</h1>
+        </div>
+        <textarea data-html><h2>Hello World!</h2></textarea>
+      </div>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1 class="cs"><i class="fa-brands fa-css3-alt" style="color: #6fa2fb;"></i> CSS</h1>
+          <textarea data-css></textarea>
+        </div>
+      </div>
+      <div class="editor-container">
+        <div class="editor-header">
+          <h1 class="js"><i class="fa-brands fa-js" style="color: #ebef25;"></i> JS</h1>
+          <textarea data-js></textarea>
+        </div>
+      </div>
+
+    </section>
+    <div class="button-container">
+      <button class="buttonR" role="button"><i class="fa-solid fa-person-running" style="color: #ffffff;"></i>  Run</button>
+      <button class="buttonC" role="button"><i class="fa-solid fa-trash" style="color: #ffffff;"></i>  Clear</button>
+    </div>
+    <iframe data-code></iframe>
+  </main>
+  <footer>
+    Copyright &copy; 2023 | Made with <i class="fa-regular fa-heart" style="color: #d18876;"></i> By Aryan
+  </footer>
+</body>
+
+</html>
