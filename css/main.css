@@ -26,6 +26,7 @@ footer{
   background-color: #000000;
   color: #fae6c2;
   text-align: center;
+  position: fixed;
 }
 
 .boxes {
